@@ -12,7 +12,7 @@ console.log("Arithmetic Operator Multiplication Output:",aA*bA)
 console.log("Arithmetic Operator Division Output:",aA/bA)
 console.log("Arithmetic Operator modulus Output:",aA%bA)
 
-//Logical Operator ->,||,&&,!,=>//
+//Logical Operator ->,||,&&,!,=>
 var aL=10
 var bL=20
 console.log("Logical Operator &&",aL&&bL)
