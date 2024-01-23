@@ -1,5 +1,5 @@
 //CALLBACK
-/*function somuRamu(welcomemessage,callback){
+function somuRamu(welcomemessage,callback){
     setTimeout(function(){
         console.log(welcomemessage)
         callback();
@@ -29,6 +29,8 @@ function database(){
 
 
 submitForm("Form submit button clicked",database)
+
+
 
 function password(correct,ps){
     setTimeout(function(){
