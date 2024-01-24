@@ -18,41 +18,42 @@
     });*/
 
 //google map eg
-function isvalid() {
-    var v = "Melbourne"
-    if (v == loc) {
-        return true
-    }
-    else {
-        return false
-    }
+function islocationvalid() {
+  var v = "Melbourne"
+  if (v == loc) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 function location(response, error) {
-    return new Promise
-    
-    (
-        setTimeout(function () {
-            console.log("the location is")
-            
-            if (islocationvalid) {
-                return response("location found")
-            }
-            else {
-                return errormsg("location not found")
-            }
+  return new Promise(function (response, errormsg){
+    setTimeout(function () {
+      loc = "Melbourne"
+      console.log("the location is", loc)
+
+      if (islocationvalid) {
+        return response("location found")
+      }
+      else {
+        return errormsg("location not found")
+      }
 
 
-        }, 2000)
-    )
-}
+    }, 2000)
+  })
+
+  }
+
 
 
 location().then(
-    function (response) {
-        console.log(response)
-    }
+  function (response) {
+    console.log(response)
+  }
 ).catch(
-    function (errormsg) {
-        consolelog(errormsg)
-    }
+  function (errormsg) {
+    consolelog(errormsg)
+  }
 )

@@ -1,6 +1,6 @@
 //Looping
 //For loop
-/*Sum = 0
+Sum = 0
 var i;
 
 for(i=0;i<10;i++)
@@ -50,7 +50,7 @@ console.log(arr.length)
 for(var i=0;i<arr.length;i++)
 {
     console.log(arr[i])
-}*/
+}
 
 //EX : 4
 arr = [1,"string",3.6,"kec"] //valid input
@@ -63,8 +63,10 @@ for(var i=0;i<arr.length;i++)
 //for in loop
 arr = [1,"string",3.6,"kec"]
 for (const index in arr){
-    console.log("The value present in index is",arr[index])
+    //console.log("The value present in index is",arr[index])
 }
+arr=Object.entries(arr)
+//console.log(arr)
 
 //for of loop
 arr = [1,"string",3.6,"kec"]
@@ -74,6 +76,6 @@ for ( value of arr){
 //EX 1: To explain in depth
 //for each loop
 arr = [1,"string",3.6,"kec"] 
-arr.forEach(value=>{
+arr.forEach(value)=>{
     console.log(value)
-})
+}
